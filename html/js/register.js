@@ -46,18 +46,20 @@ $(document).ready(function(){
 			console.log(data);
 			// var json = JSON.stringify(data);
 				// console.log(data);	
+			
 			$.ajax({
 				type: "POST",
 				url: "http://collegelife.herokuapp.com/adduser",
 				data: data,
 				success: function(data){
 					console.log(data);
+					
 				},
 				error: function(ts) { 
 					console.log(ts.responseText); 
 				}
 			});
-			window.location("platform.html");
+			
 				
 		}
 	});

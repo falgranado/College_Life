@@ -9,7 +9,6 @@ $(document).ready(function() {
       type: 'get',
       dataType: 'json',
       success: function (data) {
-      	 var tableContent = '';
 		     // For each item in our JSON
 		    $.each(data, function(){
 		      $("#name_under_picture").append(this.fullname);
