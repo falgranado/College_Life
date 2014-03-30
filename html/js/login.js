@@ -2,7 +2,7 @@
  * @author Ch32k0
  */
 $(document).ready({
-	$("#login").click(
+	$("#login").on("click",
 		function(){
 			$.ajax({
 		      url: 'http://collegelife.herokuapp.com/userlist',

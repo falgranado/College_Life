@@ -11,7 +11,8 @@ $(document).ready(function() {
       success: function (data) {
 		     // For each item in our JSON
 		    $.each(data, function(){
-		      $("#name_under_picture").append(this.fullname);
+		      $("#name_under_picture").append(this.name);
+		      $("#user").append(this.name);
 		      $("#student_number").append(this._id);
 		      $("#email_under_picture").append(this.email);
 		      $("#concentration").append(this.concentration);
@@ -30,6 +31,11 @@ $(document).ready(function() {
     $("#Grades_panel").click(function(){
     	 $('html, body').animate({
         scrollTop: $("#Grades").offset().top
+    },1500);
+    });
+    $("#Professors_panel").click(function(){
+    	 $('html, body').animate({
+        scrollTop: $("#Professors").offset().top
     },1500);
     });
 });

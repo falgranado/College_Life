@@ -40,9 +40,8 @@
         </div>
         <div class="navbar-collapse collapse" >
           <form class="navbar-form navbar-right" id="register_form">
-            <input type="text" class="form-control" id="student_number_login" placeholder="Student Number">
-            <input type="password" class="form-control" id= "password_login"placeholder="Password">
-            <button class="btn" type="submit" id="login_button">Login</button>
+           	<a id="user" class="text-muted"></a>
+            <button class="btn" type="submit" id="login_button">Logout</button>
             <a href="register.html">  Register?</a>
           </form>
         </div>
@@ -57,8 +56,7 @@
           <ul class="nav nav-sidebar">
             <li class="active"><a href="#">Overview</a></li>
             <li><a href="#Grades" id="Grades_panel">Curriculum</a></li>
-            <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
+            <li><a href="#Professors" id="Professors_panel">Professors</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
@@ -91,28 +89,28 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>INEL 3105</td>
+                  <td>Inel 3105</td>
                   <td>Circuit Analysis</td>
                   <td>LMV 3:30-4:20</td>
                   <td>Fantasma</td>
                   <td>3</td>
                 </tr>
                <tr>
-                  <td>INEL 2323</td>
+                  <td>Inel 2323</td>
                   <td>Basic Circuits</td>
                   <td>LMV 3:30-4:20</td>
                   <td>Cosculluela</td>
                   <td>3</td>
                 </tr>
                 <tr>
-                  <td>INEL 4105</td>
+                  <td>Inel 4105</td>
                   <td>Wierd Circuits</td>
                   <td>LMV 3:30-4:20</td>
                   <td>Jowell &amp; Randy</td>
                   <td>3</td>
                 </tr>
                 <tr>
-                  <td>ICOM 4075</td>
+                  <td>Icom 4075</td>
                   <td>Really Illogical Logic course</td>
                   <td>LMV 3:30-4:20</td>
                   <td>Introduction to basic circuits elements</td>
@@ -197,6 +195,46 @@
                   <td> </td>
                   <td>3</td>
                   <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+           <h2 class="sub-header">Professors</h2>
+          <div class="table-responsive" id="Professors">
+            <table class="table table-striped" id="Professors_table">
+              <thead>
+                <tr>
+                  <th>Professor</th>
+                  <th>Rating</th>
+                  <th>Comments</th>
+                  <th>Class Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Rogelio Palimera</td>
+                  <td><img src="http://www.rockclimbing.com/images/global/icons/stars-5-5.gif" class="img-responsive"/></td>
+                  <td>Great professor, you need to study a lot!</td>
+                  <td><a href="http://ece.uprm.edu/~mtoledo/web/4075/S2014/ch02-th-nor-sup.pdf">Notes</a></td>
+                </tr>
+               <tr>
+                  <td>Manuel Toledo</td>
+                  <td><img src="http://www.rockclimbing.com/images/global/icons/stars-5-5.gif" class="img-responsive"/></td>
+                  <td>Great, he explains really well!</td>
+                  <td><a href="http://ece.uprm.edu/~mtoledo/web/4075/S2014/ch02-th-nor-sup.pdf">Notes</a></td>
+                </tr>
+                <tr>
+                  <td>Manuel</td>
+                  <<td><img src="http://www.rockclimbing.com/images/global/icons/stars-5-5.gif" class="img-responsive"/></td>
+                  <td>He's the BEAST of ICOM 4015</td>
+                  <td><a href="http://ece.uprm.edu/~mtoledo/web/4075/S2014/ch02-th-nor-sup.pdf">Notes</a></td>
+                </tr>
+                <tr>
+                  <td>Baldomero</td>
+                  <td><img src="http://www.rockclimbing.com/images/global/icons/stars-5-5.gif" class="img-responsive"/></td>
+                  <td>With him you ensure a masters at MIT</td>
+                  <td><a href="http://ece.uprm.edu/~mtoledo/web/4075/S2014/ch02-th-nor-sup.pdf">Notes</a></td>
                 </tr>
               </tbody>
             </table>
