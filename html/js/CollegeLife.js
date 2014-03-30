@@ -9,12 +9,24 @@ $(document).ready(function() {
       type: 'get',
       dataType: 'json',
       success: function (data) {
-        console.log('success', data);
+      	 var tableContent = '';
+		     // For each item in our JSON
+		    $.each(data, function(){
+		      $("#name_under_picture").append(this.fullname);
+		      $("#student_number").append(this._id);
+		      $("#email_under_picture").append(this.email);
+		      $("#concentration").append(this.concentration);
+		    });
+		
+		    // Inject the whole content string into our existing HTML table
+		    $('#overview_table').append(tableContent);
       },
       error: function (XMLHttpRequest, textStatus, errorThrown) {
         console.log('error', errorThrown);
       }
     });
+    
+    
     
     $("#Grades_panel").click(function(){
     	 $('html, body').animate({
